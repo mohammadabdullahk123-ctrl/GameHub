@@ -1,0 +1,15 @@
+{
+  "name": "WordHub",
+  "short_name": "WordHub",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/blob:chrome-untrusted://media-app/b216a6c3-48c2-4864-933f-28bac37514d3/jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}
