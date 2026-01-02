@@ -56,3 +56,103 @@ body {
   color: #15803d;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.menu {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 20px;
+}
+
+#wordle-btn {
+  background-color:#e5e7eb;
+  color: #15803d;
+  border-radius: 15px;
+  transition: 0.3 ease-in-out;
+  width: 100px;
+  height: 100px;
+  border: #0b0f14,10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 150px;
+}
+
+#menu-btn {
+    background-color:#e5e7eb;
+  color: #15803d;
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  border: #0b0f14,10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  left: 380px;
+  padding: 25px;
+}
+
+#restart-btn {
+     background-color:#e5e7eb;
+  color: #15803d;
+  border-radius: 15px;
+
+  width: 100px;
+  height: 50px;
+  border: #0b0f14,10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  left: 380px;
+  bottom: 200px;
+}
+
+#menu-btn:hover {
+  background-color: #15803d;
+  color: #e5e7eb;
+  transform: scale(1.05);
+}
+#restart-btn:hover {
+  background-color: #15803d;
+  color: #e5e7eb;
+  transform: scale(1.05);
+}
+#wordle-btn:hover {
+  background-color: #15803d;
+  color: #e5e7eb;
+  transform: scale(1.05);
+}
+.particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1; /* behind the menu */
+}
+
+.particles span {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgba(76, 175, 80, 0.6);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+}
+
+.particles span:nth-child(1) { left: 10%; animation-duration: 8s; }
+.particles span:nth-child(2) { left: 30%; animation-duration: 12s; }
+.particles span:nth-child(3) { left: 50%; animation-duration: 10s; }
+.particles span:nth-child(4) { left: 70%; animation-duration: 14s; }
+.particles span:nth-child(5) { left: 90%; animation-duration: 9s; }
+.particles span:nth-child(1) { left: 10%; animation-duration: 8s; }
+.particles span:nth-child(2) { left: 30%; animation-duration: 12s; }
+.particles span:nth-child(3) { left: 50%; animation-duration: 10s; }
+.particles span:nth-child(4) { left: 70%; animation-duration: 14s; }
+.particles span:nth-child(5) { left: 90%; animation-duration: 9s; }
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(1); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(0.5); opacity: 0; }
+}
